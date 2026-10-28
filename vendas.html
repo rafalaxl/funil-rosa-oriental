@@ -8,6 +8,31 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,700;0,800;1,400;1,600&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Meta Pixel Code -->
+  <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '4262952370623357');
+    fbq('track', 'PageView');
+    fbq('track', 'ViewContent', {
+      content_name: 'Rosa Oriental - Página Oficial de Vendas',
+      content_category: 'Saúde e Beleza',
+      content_type: 'product',
+      value: 447.00,
+      currency: 'BRL'
+    });
+  </script>
+  <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=4262952370623357&ev=PageView&noscript=1"
+  /></noscript>
+  <!-- End Meta Pixel Code -->
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
@@ -1559,15 +1584,29 @@
       }
 
       const map = {
-        'btn-kit-3':  CONFIG_AFILIADO.LINK_KIT_3_MESES,
-        'btn-kit-5':  CONFIG_AFILIADO.LINK_KIT_5_MESES,
-        'btn-kit-12': CONFIG_AFILIADO.LINK_KIT_12_MESES
+        'btn-kit-3':  { url: CONFIG_AFILIADO.LINK_KIT_3_MESES,  name: 'Kit 3 Meses Rosa Oriental (Compre 2 Leve 3)',   value: 347.00, num_items: 3 },
+        'btn-kit-5':  { url: CONFIG_AFILIADO.LINK_KIT_5_MESES,  name: 'Kit 5 Meses Rosa Oriental (Compre 3 Leve 5)',   value: 447.00, num_items: 5 },
+        'btn-kit-12': { url: CONFIG_AFILIADO.LINK_KIT_12_MESES, name: 'Kit 12 Meses Rosa Oriental (Compre 6 Leve 12)', value: 897.00, num_items: 12 }
       };
 
       Object.keys(map).forEach(function(id) {
         const el = document.getElementById(id);
-        if (el && map[id]) {
-          el.setAttribute('href', appendParams(map[id]));
+        const kit = map[id];
+        if (el && kit && kit.url) {
+          el.setAttribute('href', appendParams(kit.url));
+          el.addEventListener('click', function() {
+            if (typeof fbq === 'function') {
+              fbq('track', 'InitiateCheckout', {
+                content_name: kit.name,
+                content_category: 'Rosa Oriental Kits',
+                content_ids: [id],
+                content_type: 'product',
+                value: kit.value,
+                currency: 'BRL',
+                num_items: kit.num_items
+              });
+            }
+          });
         }
       });
     })();
