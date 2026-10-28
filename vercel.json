@@ -1,6 +1,4 @@
 {
-  "cleanUrls": true,
-  "trailingSlash": false,
   "rewrites": [
     {
       "source": "/",
@@ -25,6 +23,18 @@
     {
       "source": "/",
       "destination": "/artigo.html"
+    },
+    {
+      "source": "/privacidade",
+      "destination": "/privacidade.html"
+    },
+    {
+      "source": "/termos",
+      "destination": "/termos.html"
+    },
+    {
+      "source": "/vendas",
+      "destination": "/vendas.html"
     }
   ]
 }
