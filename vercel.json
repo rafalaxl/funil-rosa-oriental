@@ -7,7 +7,7 @@
       "has": [
         {
           "type": "host",
-          "value": "rosa-oriental.vercel.app"
+          "value": "rosaoriental-oficial.vercel.app"
         }
       ],
       "destination": "/vendas.html"
@@ -17,7 +17,17 @@
       "has": [
         {
           "type": "host",
-          "value": "rosaoriental-oficial.vercel.app"
+          "value": "rosa-oriental-zeta.vercel.app"
+        }
+      ],
+      "destination": "/vendas.html"
+    },
+    {
+      "source": "/",
+      "has": [
+        {
+          "type": "host",
+          "value": "rosa-oriental.vercel.app"
         }
       ],
       "destination": "/vendas.html"
