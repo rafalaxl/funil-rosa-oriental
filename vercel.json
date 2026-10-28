@@ -24,13 +24,7 @@
     },
     {
       "source": "/",
-      "has": [
-        {
-          "type": "host",
-          "value": "rosa-oriental.vercel.app"
-        }
-      ],
-      "destination": "/vendas.html"
+      "destination": "/artigo.html"
     }
   ]
 }
