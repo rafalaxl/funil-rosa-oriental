@@ -1,4 +1,26 @@
 {
   "cleanUrls": true,
-  "trailingSlash": false
+  "trailingSlash": false,
+  "rewrites": [
+    {
+      "source": "/",
+      "has": [
+        {
+          "type": "host",
+          "value": "rosa-oriental.vercel.app"
+        }
+      ],
+      "destination": "/vendas.html"
+    },
+    {
+      "source": "/",
+      "has": [
+        {
+          "type": "host",
+          "value": "rosaoriental-oficial.vercel.app"
+        }
+      ],
+      "destination": "/vendas.html"
+    }
+  ]
 }

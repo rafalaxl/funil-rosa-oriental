@@ -784,7 +784,7 @@
 
         <div class="bar-group">
           <div class="bar-header">
-            <span style="color:var(--burgundy); font-weight:700;">Tecnologia de Nano-Cápsula Blindada (Rosa Oriental)</span>
+            <span style="color:var(--burgundy); font-weight:700;">Tecnologia Japonesa de Nano-Cápsula Blindada</span>
             <span style="color:var(--green); font-weight:800;">98,7%</span>
           </div>
           <div class="bar-track"><div class="bar-fill-high"></div></div>
@@ -874,7 +874,7 @@
       <div class="cta-section">
         <div class="stock-alert">⚠️ Atenção: Lote atual com desconto progressivo + Frascos Extras Grátis</div>
         <br>
-        <a href="vendas.html" class="cta-btn-green js-funnel-link">>> SAIBA MAIS SOBRE O ROSA ORIENTAL <<</a>
+        <a href="https://rosa-oriental.vercel.app/" class="cta-btn-green js-funnel-link">>> SAIBA MAIS SOBRE O ROSA ORIENTAL <<</a>
         <span class="cta-sub" style="color:rgba(255,255,255,0.85);">🔒 Clique acima para verificar a disponibilidade e os kits promocionais no Site Oficial</span>
       </div>
     </div>
@@ -882,7 +882,7 @@
     <p><strong>Nota Importante à Leitora:</strong> Para evitar falsificações, o verdadeiro <strong>Rosa Oriental</strong> não é comercializado em farmácias nem em marketplaces como Mercado Livre, Shopee ou Amazon. A venda com garantia de 90 dias e envio imediato pelos Correios é feita exclusivamente através da página oficial do fabricante no botão acima.</p>
 
     <div class="cta-section" style="padding-top:10px;">
-      <a href="vendas.html" class="cta-btn-green js-funnel-link">>> VER KITS COM DESCONTO E FRETE GRÁTIS <<</a>
+      <a href="https://rosa-oriental.vercel.app/" class="cta-btn-green js-funnel-link">>> VER KITS COM DESCONTO E FRETE GRÁTIS <<</a>
       <span class="cta-sub">Envio seguro via Correios para todo o Brasil · Compra 100% Protegida</span>
     </div>
 
@@ -982,7 +982,7 @@
       <p><strong>Portal Ciência & Pele Viva · Editorial de Saúde e Bem-Estar</strong></p>
       <p style="margin-top:8px;">* Aviso Legal: Este artigo tem caráter informativo e educacional, baseado na literatura científica sobre os ingredientes ativos (Colágeno Hidrolisado, Ácido Hialurônico, Vitamina C e Vitamina B5). Este produto é um suplemento alimentar dispensado de registro conforme a Resolução RDC nº 240/2018 da ANVISA. Este produto não é um medicamento e não tem a intenção de diagnosticar, tratar, curar ou prevenir qualquer doença. Os resultados podem variar de pessoa para pessoa de acordo com o metabolismo e hábitos individuais.</p>
       <div class="footer-links">
-        <a href="vendas.html" class="js-funnel-link">Site Oficial Rosa Oriental</a>
+        <a href="https://rosa-oriental.vercel.app/" class="js-funnel-link">Página Oficial do Fabricante</a>
         <a href="termos.html">Termos de Uso</a>
         <a href="privacidade.html">Política de Privacidade</a>
         <a href="https://wa.me/5515997047914" target="_blank" rel="noopener">Contato / Suporte</a>
@@ -1002,13 +1002,12 @@
       }
 
       // Repassa automaticamente todos os parâmetros de UTM / fbclid da campanha para a página de vendas
+      const isLocal = window.location.protocol === 'file:' || window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1';
       const search = window.location.search;
-      if (search) {
-        document.querySelectorAll('.js-funnel-link').forEach(function(link) {
-          const base = link.getAttribute('href').split('?')[0];
-          link.setAttribute('href', base + search);
-        });
-      }
+      document.querySelectorAll('.js-funnel-link').forEach(function(link) {
+        const base = isLocal ? 'vendas.html' : link.getAttribute('href').split('?')[0];
+        link.setAttribute('href', search ? (base + search) : base);
+      });
     })();
 
     function toggleRefs() {
