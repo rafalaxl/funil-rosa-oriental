@@ -890,7 +890,7 @@
       </div>
 
       <div class="cta-section">
-        <div class="stock-alert">⚠️ Atenção: Lote atual com desconto progressivo + Frascos Extras Grátis</div>
+        <div class="stock-alert">⚠️ Atenção: Lote atual com desconto progressivo + Frascos Extras Grátis (Parcele em até 12x)</div>
         <br>
         <a href="https://rosaoriental-oficial.vercel.app/" class="cta-btn-green js-funnel-link">>> SAIBA MAIS SOBRE O ROSA ORIENTAL <<</a>
         <span class="cta-sub" style="color:rgba(255,255,255,0.85);">🔒 Clique acima para verificar a disponibilidade e os kits promocionais no Site Oficial</span>
@@ -1019,19 +1019,34 @@
         el.textContent = 'Atualizado em ' + hoje.toLocaleDateString('pt-BR', opcoes);
       }
 
-      // Repassa automaticamente todos os parâmetros de UTM / fbclid da campanha para a página de vendas
-      // e dispara evento de clique no Pixel da Meta
+      // Repassa automaticamente todos os parâmetros da URL (utm_*, fbclid, src, sck...) para
+      // todos os links que apontam para a página de vendas (rosaoriental-oficial.vercel.app),
+      // preservando parâmetros já existentes no link, e dispara evento de clique no Pixel da Meta
       const isLocal = window.location.protocol === 'file:' || window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1';
-      const search = window.location.search;
-      document.querySelectorAll('.js-funnel-link').forEach(function(link) {
-        const base = isLocal ? 'vendas.html' : link.getAttribute('href').split('?')[0];
-        link.setAttribute('href', search ? (base + search) : base);
+      const pageParams = new URLSearchParams(window.location.search);
+      const SALES_HOST = 'rosaoriental-oficial.vercel.app';
+
+      document.querySelectorAll('a[href]').forEach(function(link) {
+        const href = link.getAttribute('href');
+        if (!link.classList.contains('js-funnel-link') && href.indexOf(SALES_HOST) === -1) return;
+
+        let finalHref;
+        try {
+          const url = new URL(isLocal ? 'vendas.html' : href, window.location.href);
+          pageParams.forEach(function(value, key) {
+            if (!url.searchParams.has(key)) url.searchParams.append(key, value);
+          });
+          finalHref = url.toString();
+        } catch (e) {
+          finalHref = href;
+        }
+        link.setAttribute('href', finalHref);
 
         link.addEventListener('click', function() {
           if (typeof fbq === 'function') {
             fbq('trackCustom', 'CliqueAdvertorial', {
               content_name: 'Advertorial Rosa Oriental - Ir para Página de Vendas',
-              destination: base
+              destination: finalHref.split('?')[0]
             });
           }
         });
