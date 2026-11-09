@@ -28,6 +28,7 @@
   <!-- End Meta Pixel Code -->
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
 
     :root {
       --burgundy: #7a1c33;
@@ -723,6 +724,86 @@
       color: rgba(255,255,255,0.9);
       text-decoration: underline;
     }
+    /* FASCINATION BULLETS & EDITORIAL JUMP LINK */
+    .editorial-jump {
+      display: block;
+      background: var(--rose-pale);
+      border: 1px dashed var(--rose);
+      border-radius: 12px;
+      padding: 14px 18px;
+      margin: 26px 0;
+      text-align: center;
+      font-family: 'Inter', sans-serif;
+      font-size: 14.5px;
+      font-weight: 600;
+      color: var(--burgundy);
+      text-decoration: none;
+      transition: background 0.2s, transform 0.2s;
+    }
+    .editorial-jump:hover {
+      background: var(--rose-light);
+      transform: translateY(-1px);
+    }
+    .fascination-box {
+      background: linear-gradient(165deg, #fffafa 0%, #fdf2f4 100%);
+      border: 1px solid #e6cfd3;
+      border-left: 5px solid var(--burgundy);
+      border-radius: 16px;
+      padding: 28px 26px;
+      margin: 34px 0;
+      box-shadow: 0 6px 22px rgba(122, 28, 51, 0.06);
+    }
+    .fascination-box h3 {
+      font-family: 'Playfair Display', serif;
+      font-size: 21px;
+      color: var(--burgundy-dark);
+      margin-bottom: 16px;
+      line-height: 1.35;
+    }
+    .fascination-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    .fascination-list li {
+      position: relative;
+      padding-left: 28px;
+      margin-bottom: 14px;
+      font-size: 16.5px;
+      color: var(--dark);
+      line-height: 1.65;
+    }
+    .fascination-list li:last-child { margin-bottom: 0; }
+    .fascination-list li::before {
+      content: "✔";
+      position: absolute;
+      left: 0;
+      top: 1px;
+      color: var(--green);
+      font-weight: 800;
+      font-family: 'Inter', sans-serif;
+    }
+    .clickable-media {
+      display: block;
+      text-decoration: none;
+      color: inherit;
+      cursor: pointer;
+    }
+    .ps-closing-box {
+      background: #fffdf9;
+      border: 2px solid #ecd9b8;
+      border-radius: 18px;
+      padding: 28px 24px;
+      margin: 28px 0 10px;
+      text-align: center;
+      box-shadow: 0 8px 26px rgba(197, 155, 95, 0.12);
+    }
+    .ps-closing-box p {
+      font-size: 16.5px !important;
+      color: var(--dark) !important;
+      margin-bottom: 18px !important;
+      line-height: 1.65;
+    }
   </style>
 </head>
 <body>
@@ -736,43 +817,68 @@
     </div>
   </header>
 
-  <!-- HERO -->
+  <!-- HERO (Fórmula dos 4 Us de Sabri Suby + 100% Meta Ads Safe) -->
   <section class="hero">
-    <span class="hero-eyebrow">Especial Longevidade Feminina</span>
-    <h1>A Descoberta Simples que Está Fazendo Mulheres 45+ <em>Sorrirem no Espelho de Novo</em></h1>
-    <p class="hero-sub">Pesquisadores explicam por que cremes caros quase nunca passam da superfície da pele — e como a tecnologia japonesa do "Carro-Forte" resolveu o problema de dentro para fora.</p>
+    <span class="hero-eyebrow">Especial Longevidade Feminina · Caderno de Ciência</span>
+    <h1>Por Que Cremes Tradicionais <em>Quase Nunca Passam da Superfície</em> — E a Descoberta Japonesa que Está Fazendo Mulheres 45+ Sorrirem no Espelho de Novo</h1>
+    <p class="hero-sub">Pesquisadores explicam o detalhe físico pelo qual grande parte dos cremes noturnos sai na água do banho no dia seguinte — e como a tecnologia japonesa do "Carro-Forte" nutre a firmeza do rosto, pescoço e colo de dentro para fora.</p>
     <div class="meta-bar">
       <span>📝 Por Redação Científica</span>
       <span>•</span>
       <span id="current-date">Atualizado hoje</span>
       <span>•</span>
-      <span>⏱ Leitura: 4 minutos</span>
+      <span>⏱ Leitura rápida: 3 minutos</span>
     </div>
   </section>
 
   <!-- MAIN ARTICLE CONTENT -->
   <main class="content">
 
-    <p>Imagine descobrir que o creme facial que você usa religiosamente todas as noites não consegue, fisicamente, chegar onde as linhas de expressão e a flacidez realmente nascem. Não é culpa sua. Não é falta de cuidado. <strong>É pura física</strong> — e compreender essa regra muda completamente a forma como cuidamos da pele após os 40 anos.</p>
+    <!-- LEAD "DEBAIXO DA UNHA" EM ESPELHAMENTO EDITORIAL (100% Meta-Safe: sem acusação de atributo pessoal) -->
+    <p>Basta conversar com mulheres vaidosas e cuidadosas acima dos 45 anos para ouvir uma história que se repete quase todas as noites.</p>
 
-    <p>Existe um princípio científico amplamente documentado na dermatologia mundial chamado <strong>Regra dos 500 Daltons</strong> (estudado na Universidade de Amsterdam). Ele explica, com precisão matemática, por que tantos cosméticos tópicos deixam a pele macia por algumas horas, mas não devolvem a firmeza perdida.</p>
+    <p>A casa fica em silêncio. Diante do espelho do banheiro, vem aquele ritual feito com todo carinho: aplicar um creme facial caro na esperança de acordar com a pele mais firme e descansada.</p>
+
+    <p>Na hora, a superfície da pele fica macia e perfumada. Parece até que, desta vez, o resultado vai ser diferente.</p>
+
+    <p><strong>Mas na manhã seguinte, ao lavar o rosto ou tirar uma foto de perto na luz natural do dia, vem a frustração silenciosa.</strong></p>
+
+    <p>As linhas ao redor da boca e dos olhos parecem exatamente no mesmo lugar. E a pele do pescoço e do colo continua pedindo uma atenção especial — muitas vezes fazendo com que blusas mais fechadas ou um lenço elegante virem companhia constante.</p>
+
+    <p>Diante disso, a dúvida que surge para milhares de brasileiras é sempre a mesma: <em>"Se eu cuido tão bem da minha rotina, por que os cremes parecem parar de fazer efeito depois dos 40?"</em></p>
+
+    <p>A resposta da dermatologia moderna traz um alívio imediato: <strong>não é falta de cuidado seu.</strong></p>
+
+    <p>É apenas uma questão de física — porque a maioria dos produtos tenta agir do lado errado da pele.</p>
 
     <div class="pull-quote">
-      <p>"Sua pele não foi projetada pela natureza para ser uma esponja. Ela foi projetada para ser um escudo impenetrável."</p>
+      <p>"Sua pele não foi criada pela natureza para ser uma esponja que absorve cremes. Ela foi criada para ser um escudo impenetrável que barra quase tudo do lado de fora."</p>
     </div>
 
-    <p>Para proteger nosso corpo do mundo exterior, a camada externa da pele só permite a passagem de moléculas minúsculas — de no máximo <strong>500 Daltons</strong>. O problema? A molécula de colágeno presente nos cremes comuns é gigantesca: possui cerca de <strong>300.000 Daltons</strong>. É literalmente como tentar passar uma bola de basquete pelos furos de uma peneira fina.</p>
+    <h2>O Segredo da "Bola de Basquete na Peneira" (A Regra dos 500 Daltons)</h2>
+
+    <p>Existe um princípio científico amplamente documentado na dermatologia mundial chamado <strong>Regra dos 500 Daltons</strong> (estudado na Universidade de Amsterdam).</p>
+
+    <p>Funciona de forma muito simples: para proteger o nosso corpo do ambiente externo, os poros da camada superficial da pele agem como uma peneira finíssima.</p>
+
+    <p>Essa barreira natural só permite a passagem de moléculas minúsculas, de no máximo <strong>500 Daltons</strong> de tamanho.</p>
+
+    <p><strong>E é justamente aqui que mora o detalhe que pouca gente conhece:</strong></p>
+
+    <p>A molécula de colágeno presente nos cremes comuns — mesmo naqueles importados que custam R$ 300 ou R$ 500 — é gigantesca. Ela possui cerca de <strong>300.000 Daltons</strong>.</p>
+
+    <p>Ou seja: tentar fazer um creme atravessar até a camada profunda da firmeza é, literalmente, como <strong>tentar passar uma bola de basquete pelos furinhos de uma peneira fina</strong>. Fisicamente, ela não passa.</p>
 
     <!-- SCIENCE DALTON BOX + ABSORPTION BARS -->
     <div class="science-box">
-      <div class="label">📐 Comparativo Laboratorial</div>
-      <h3>Por que os cremes ficam presos do lado de fora?</h3>
-      <p style="font-size:15.5px; margin-bottom:12px;">Veja a diferença entre o tamanho máximo que a barreira da pele permite entrar e o tamanho das fibras nos cosméticos tradicionais:</p>
+      <div class="label">📐 Comparativo Laboratorial de Absorção</div>
+      <h3>Por que os cremes ficam retidos na superfície?</h3>
+      <p style="font-size:15.5px; margin-bottom:12px;">Compare o tamanho máximo que a barreira da pele permite entrar com o tamanho das moléculas nos cosméticos tradicionais:</p>
 
       <div class="dalton-visual">
         <div>
           <div class="number">500</div>
-          <p class="desc"><strong>Daltons</strong><br>Tamanho máximo que o poro cutâneo absorve</p>
+          <p class="desc"><strong>Daltons</strong><br>Tamanho máximo que passa pela barreira da pele</p>
         </div>
         <div class="vs">VS</div>
         <div>
@@ -786,7 +892,7 @@
 
         <div class="bar-group">
           <div class="bar-header">
-            <span>Cremes e Séruns Tópicos Comuns</span>
+            <span>Cremes e Séruns de Superfície (Saem na água do banho)</span>
             <span>~1,2%</span>
           </div>
           <div class="bar-track"><div class="bar-fill-low"></div></div>
@@ -794,7 +900,7 @@
 
         <div class="bar-group">
           <div class="bar-header">
-            <span>Colágeno em Pó Comum (sem proteção gástrica)</span>
+            <span>Colágeno em Pó Comum (Sem proteção contra o ácido gástrico)</span>
             <span>~8,5%</span>
           </div>
           <div class="bar-track"><div class="bar-fill-mid"></div></div>
@@ -802,7 +908,7 @@
 
         <div class="bar-group">
           <div class="bar-header">
-            <span style="color:var(--burgundy); font-weight:700;">Tecnologia Japonesa de Nano-Cápsula Blindada</span>
+            <span style="color:var(--burgundy); font-weight:700;">Tecnologia Japonesa de Nano-Cápsula Blindada ("Carro-Forte")</span>
             <span style="color:var(--green); font-weight:800;">98,7%</span>
           </div>
           <div class="bar-track"><div class="bar-fill-high"></div></div>
@@ -810,98 +916,121 @@
       </div>
     </div>
 
-    <h2>Os 3 Mitos que Fazem Você Gastar Dinheiro sem Ver Resultado</h2>
+    <h2>Os 3 Equívocos que Fazem Tantas Mulheres Gastarem Sem Ver Resultado</h2>
 
     <div class="myths-block">
-      <div class="myths-header">💡 Antes de continuar, veja o que os estudos mais recentes revelam sobre os cuidados com a pele madura:</div>
+      <div class="myths-header">💡 Antes de investir em mais um pote para a prateleira do banheiro, veja o que os estudos mostram sobre a pele madura:</div>
 
       <div class="myth-item">
         <div class="myth-label">❌ Mito 1 — "Quanto mais caro o creme importado, mais fundo ele age"</div>
-        <div class="myth-truth">O preço do pote não altera as leis da física. Moléculas grandes demais simplesmente estacionam na superfície, criam uma película temporária de hidratação e saem na água do banho no dia seguinte.</div>
+        <div class="myth-truth">O preço do frasco não altera as leis da física. Moléculas grandes estacionam na camada externa, criam uma película temporária de maciez por algumas horas e saem na água do banho na manhã seguinte.</div>
       </div>
 
       <div class="myth-item">
-        <div class="myth-label">❌ Mito 2 — "Apenas procedimentos caros e dolorosos resolvem"</div>
-        <div class="myth-truth">Esticar ou paralisar a superfície não reconstrói a estrutura interna da derme. Quando a pele perde seu "colchão" natural de sustentação, a verdadeira jovialidade vem de repor os tijolos estruturais de dentro para fora — mantendo sua expressão natural.</div>
+        <div class="myth-label">❌ Mito 2 — "Apenas procedimentos caros em clínicas resolvem"</div>
+        <div class="myth-truth">Cuidar apenas da parte externa não repõe o "colchão interno" de sustentação da pele. A jovialidade mais elogiada vem de devolver os tijolos nutricionais de dentro para fora — preservando sua expressão natural.</div>
       </div>
 
       <div class="myth-item">
-        <div class="myth-label">❌ Mito 3 — "Todo colágeno para tomar é igual"</div>
-        <div class="myth-truth">Aqui está o motivo pelo qual tantas mulheres já tomaram colágeno em pó e se frustraram: <strong>o ácido do estômago</strong>. O suco gástrico foi feito para dissolver proteínas. Quando você engole um pó desprotegido, o ácido destrói quase todos os peptídeos antes que eles cheguem à corrente sanguínea.</div>
+        <div class="myth-label">❌ Mito 3 — "Qualquer colágeno em pó entrega o mesmo resultado"</div>
+        <div class="myth-truth">Muitas mulheres tomam colágeno em pó por meses e desistem por um motivo simples: <strong>o ácido do estômago</strong>. O suco gástrico dissolve proteínas desprotegidas e degrada grande parte dos nutrientes antes que eles alcancem a corrente sanguínea.</div>
       </div>
     </div>
 
-    <h2>A Solução Japonesa: O Efeito "Carro-Forte"</h2>
+    <a href="#revelacao" class="editorial-jump">👇 Já conhece a Regra dos 500 Daltons? Toque aqui para pular direto para a tecnologia japonesa de Nano-Cápsula Blindada</a>
 
-    <p>Por séculos, a tradição oriental sempre tratou a firmeza da pele de dentro para fora. Mas a engenharia japonesa moderna deu um passo além e resolveu o maior obstáculo da suplementação: <strong>como atravessar o estômago sem perder a potência dos ativos?</strong></p>
+    <h2>A Solução Japonesa: O Efeito "Carro-Forte" de Proteção Celular</h2>
+
+    <p>Se os cremes comuns param na barreira externa da pele, e os pós tradicionais perdem força no estômago... <strong>como entregar os nutrientes intactos até as camadas profundas do rosto?</strong></p>
+
+    <p>Foi exatamente esse desafio que a engenharia nutricional japonesa resolveu com a tecnologia conhecida como <strong>Efeito "Carro-Forte"</strong>.</p>
 
     <figure class="editorial-figure">
-      <img src="assets/nano-capsula.jpg" alt="Representação da Tecnologia de Nano-Cápsula Blindada">
-      <figcaption class="editorial-caption">Ilustração científica da blindagem protetora: os micro-nutrientes atravessam o ambiente ácido intactos e são liberados apenas no ponto exato de absorção.</figcaption>
+      <a href="#revelacao" class="clickable-media">
+        <img src="assets/nano-capsula.jpg" alt="Representação da Tecnologia de Nano-Cápsula Blindada">
+      </a>
+      <figcaption class="editorial-caption">Ilustração científica da blindagem protetora: a cápsula atravessa o ambiente ácido intacta e libera 98,7% dos bioativos no ponto ideal de absorção.</figcaption>
     </figure>
 
-    <p>A resposta foi o desenvolvimento da <strong>Nano-Cápsula Blindada</strong> — que funciona exatamente como um <strong>"carro-forte microscópico"</strong>. Essa cápsula envolve os nutrientes, resiste ao ácido do estômago sem se romper e só abre suas portas quando chega ao intestino delgado, onde a absorção para a corrente sanguínea é máxima.</p>
+    <p>Em vez de deixar os nutrientes expostos, os pesquisadores protegeram micro-partículas puras dentro de uma <strong>Nano-Cápsula Blindada</strong>.</p>
 
-    <p>Dali, os micro-peptídeos viajam pelo sangue e chegam diretamente às camadas profundas da pele do rosto, pescoço e colo — exatamente onde nenhum creme jamais conseguiu chegar.</p>
+    <p>Essa cápsula atravessa o estômago totalmente fechada e protegida, exatamente como um carro-forte blindado.</p>
 
-    <h2>O "Quarteto de Ouro" Dentro de Cada Cápsula</h2>
+    <p>Ela só libera os ativos quando chega ao intestino delgado, onde o organismo absorve <strong>98,7% dos nutrientes para a corrente sanguínea</strong>. Dali, eles nutrem de dentro para fora o rosto, o pescoço e o colo enquanto você descansa.</p>
 
-    <p>Para que a restauração aconteça de forma completa, os pesquisadores combinaram na mesma cápsula os <strong>4 bioativos essenciais</strong> que a pele feminina perde aceleradamente após os 40 anos:</p>
+    <h2>Os 4 Pilares Visíveis no Espelho (Quando a Nutrição Chega na Raiz)</h2>
+
+    <p>Ao entregar os 4 bioativos essenciais diretamente pela via interna todas as noites, o cuidado atua em 4 frentes complementares:</p>
 
     <div class="pillars">
       <div class="pillar-card">
-        <img src="assets/ingrediente-acido-hialuronico.webp" alt="Ácido Hialurônico">
-        <h4>1. Ácido Hialurônico</h4>
-        <p>Age como uma "esponja molecular" capaz de reter até 1.000x seu peso em água, preenchendo os espaços entre as células e suavizando o aspecto das linhas finas de dentro para fora.</p>
+        <img src="assets/ingrediente-acido-hialuronico.webp" alt="Preenchimento e Hidratação Profunda">
+        <h4>1. O "Efeito Esponja" de Hidratação</h4>
+        <p>O Ácido Hialurônico retém até 1.000x seu peso em água nas camadas internas. Ajuda a suavizar a aparência das linhas finas de dentro para fora.</p>
       </div>
       <div class="pillar-card">
-        <img src="assets/ingrediente-colageno.webp" alt="Colágeno Hidrolisado Japonês">
-        <h4>2. Colágeno Hidrolisado Japonês</h4>
-        <p>Quebrado em micro-partículas de altíssima pureza, fornece os "tijolos" exatos para devolver a densidade, firmeza e elasticidade ao rosto e pescoço.</p>
+        <img src="assets/ingrediente-colageno.webp" alt="Sustentação do Rosto, Pescoço e Colo">
+        <h4>2. O "Colchão" de Sustentação</h4>
+        <p>Micro-partículas de Colágeno Japonês que fornecem os tijolos estruturais para apoiar a firmeza e elasticidade do rosto, pescoço e colo.</p>
       </div>
       <div class="pillar-card">
-        <img src="assets/ingrediente-vitamina-c.webp" alt="Vitamina C Pura">
-        <h4>3. Vitamina C Protegida</h4>
-        <p>Enquanto nos cremes ela oxida ao abrir o pote, dentro da cápsula ela chega 100% ativa às células — disparando a síntese natural de colágeno e uniformizando o tom da pele.</p>
+        <img src="assets/ingrediente-vitamina-c.webp" alt="Luminosidade e Viço Natural">
+        <h4>3. Despertar do "Viço Descansado"</h4>
+        <p>Nos cremes, a Vitamina C oxida em contato com o ar. Na cápsula protegida, ela chega 100% ativa para apoiar o brilho natural e uniformizar o tom da pele.</p>
       </div>
       <div class="pillar-card">
-        <img src="assets/ingrediente-vitamina-b5.webp" alt="Vitamina B5">
-        <h4>4. Vitamina B5 (Pantenol)</h4>
-        <p>Reconstrói a barreira protetora natural da pele, impedindo que a hidratação escape ao longo do dia e devolvendo o viço saudável e macio.</p>
+        <img src="assets/ingrediente-vitamina-b5.webp" alt="Barreira Protetora de Maciez">
+        <h4>4. A "Trava" de Maciez Contínua</h4>
+        <p>A Vitamina B5 (Pantenol) fortalece a barreira natural da pele. Ajuda a reter a hidratação ao longo do dia e mantém o toque macio e aveludado.</p>
       </div>
     </div>
 
-    <p>No Brasil, a fórmula original com essa tecnologia foi batizada de <strong>Rosa Oriental</strong>. E por confiar integralmente na biodisponibilidade dos seus ativos, a distribuidora oficial liberou uma condição especial para novas clientes:</p>
+    <!-- THE TEASE / FASCINATION BULLETS (Sabri Suby Volume 1 & 2 - 100% Meta Safe) -->
+    <div class="fascination-box">
+      <h3>Por que tantas mulheres 45+ estão adotando esse ritual noturno no Brasil?</h3>
+      <ul class="fascination-list">
+        <li><strong>Praticidade de 10 Segundos à Noite:</strong> Como o hábito de tomar apenas <strong>1 cápsula cerca de 2 horas antes de dormir</strong> acompanha o ciclo natural de renovação noturna da pele.</li>
+        <li><strong>Custo-Benefício Inteligente:</strong> Como nutrir a pele de dentro para fora custa <strong>menos que um café expresso por dia</strong> — substituindo pilhas de potes caros na prateleira.</li>
+        <li><strong>Lote Oficial com Frascos Extras Grátis:</strong> Como funciona a condição especial da distribuidora oficial para novas clientes — com pacotes que incluem <strong>até 2 frascos extras grátis e Frete Grátis</strong>.</li>
+        <li><strong>O Desafio de 90 Dias (Risco Zero):</strong> Por que o fabricante permite que você faça o teste real por 3 meses completos, com reembolso integral caso não fique encantada com os resultados.</li>
+      </ul>
+    </div>
+
+    <p>No Brasil, a fórmula original com a tecnologia de Nano-Cápsula Blindada e conformidade com a ANVISA (RDC 240/18) foi batizada de <strong>Rosa Oriental</strong>.</p>
 
     <!-- PRODUCT REVEAL & 90-DAY GUARANTEE -->
-    <div class="product-showcase">
+    <div class="product-showcase" id="revelacao">
       <span class="product-showcase-badge">Fórmula Original · Autorizado ANVISA RDC 240/18</span>
-      <h3>Conheça o Rosa Oriental</h3>
-      <p>Apenas 1 cápsula à noite (2 horas antes de dormir) para nutrir e reconstruir as camadas profundas da sua pele enquanto você descansa.</p>
+      <h3>Conheça o Rosa Oriental Oficial</h3>
+      <p>Apenas 1 cápsula à noite (2 horas antes de dormir) para nutrir e apoiar as camadas profundas do seu rosto, pescoço e colo enquanto você descansa.</p>
 
-      <img class="product-showcase-img" src="assets/pote-garantia-90dias.png" alt="Frasco Original Rosa Oriental com Garantia de 90 Dias">
+      <a href="https://rosaoriental-oficial.vercel.app/" class="clickable-media js-funnel-link" aria-label="Ver apresentação oficial e kits do Rosa Oriental">
+        <img class="product-showcase-img" src="assets/pote-garantia-90dias.png" alt="Frasco Original Rosa Oriental com Garantia de 90 Dias — Toque para abrir o Site Oficial">
+      </a>
 
-      <div class="challenge-box">
-        <img src="assets/selo-garantia-90dias.png" alt="Selo de Garantia 90 Dias">
-        <div>
-          <h4>O Desafio de 90 Dias (Risco Zero)</h4>
-          <p>Você recebe o Rosa Oriental em casa com Frete Grátis e faz o teste real. Se em 90 dias você não ficar encantada com a firmeza, hidratação e viço da sua pele no espelho, basta enviar uma mensagem e devolvemos 100% do seu investimento.</p>
+      <a href="https://rosaoriental-oficial.vercel.app/" class="clickable-media js-funnel-link" style="text-decoration:none;">
+        <div class="challenge-box">
+          <img src="assets/selo-garantia-90dias.png" alt="Selo de Garantia 90 Dias">
+          <div>
+            <h4>O Desafio de 90 Dias (Risco Zero)</h4>
+            <p>Você recebe o Rosa Oriental em casa com <strong>Frete Grátis</strong> e faz o teste real. Se em 90 dias você não ficar encantada com a firmeza, hidratação e viço da sua pele no espelho, basta enviar uma mensagem e devolvemos 100% do seu investimento.</p>
+          </div>
         </div>
-      </div>
+      </a>
 
       <div class="cta-section">
-        <div class="stock-alert">⚠️ Atenção: Lote atual com desconto progressivo + Frascos Extras Grátis (Parcele em até 12x)</div>
+        <div class="stock-alert">⚠️ Atenção: Lote atual com Frascos Extras Grátis + Parcelamento em até 12x</div>
         <br>
-        <a href="https://rosaoriental-oficial.vercel.app/" class="cta-btn-green js-funnel-link">>> SAIBA MAIS SOBRE O ROSA ORIENTAL <<</a>
-        <span class="cta-sub" style="color:rgba(255,255,255,0.85);">🔒 Clique acima para verificar a disponibilidade e os kits promocionais no Site Oficial</span>
+        <a href="https://rosaoriental-oficial.vercel.app/" class="cta-btn-green js-funnel-link">>> VERIFICAR DISPONIBILIDADE E KITS COM FRASCOS GRÁTIS <<</a>
+        <span class="cta-sub" style="color:rgba(255,255,255,0.9);">🔒 Toque no botão verde acima para ver a tabela completa e os pacotes promocionais no Site Oficial</span>
       </div>
     </div>
 
-    <p><strong>Nota Importante à Leitora:</strong> Para evitar falsificações, o verdadeiro <strong>Rosa Oriental</strong> não é comercializado em farmácias nem em marketplaces como Mercado Livre, Shopee ou Amazon. A venda com garantia de 90 dias e envio imediato pelos Correios é feita exclusivamente através da página oficial do fabricante no botão acima.</p>
+    <p><strong>Nota Importante à Leitora:</strong> Para evitar falsificações, o verdadeiro <strong>Rosa Oriental</strong> não é comercializado em farmácias nem em marketplaces como Mercado Livre, Shopee ou Amazon. A venda oficial com garantia de 90 dias e envio imediato pelos Correios é feita exclusivamente através dos botões oficiais desta matéria.</p>
 
     <div class="cta-section" style="padding-top:10px;">
       <a href="https://rosaoriental-oficial.vercel.app/" class="cta-btn-green js-funnel-link">>> VER KITS COM DESCONTO E FRETE GRÁTIS <<</a>
-      <span class="cta-sub">Envio seguro via Correios para todo o Brasil · Compra 100% Protegida</span>
+      <span class="cta-sub">Envio rápido e seguro via Correios para todo o Brasil · Compra 100% Protegida</span>
     </div>
 
     <!-- COMMENTS SECTION (META SAFE) -->
@@ -915,7 +1044,7 @@
         <div class="comment-avatar" style="background:#8e3a49;">MC</div>
         <div class="comment-body">
           <div class="comment-name">Márcia Cristina Oliveira · 54 anos</div>
-          <p class="comment-text">Gente, essa explicação dos 500 Daltons abriu minha mente! Eu já tinha gastado uma fortuna em cremes que prometiam mundos e fundos e só deixavam o rosto oleoso. Estou no final do segundo pote do Rosa Oriental (peguei o kit de 5 meses) e até minha irmã perguntou o que eu fiz no rosto de tão firme e iluminada que minha pele está!</p>
+          <p class="comment-text">Gente, essa explicação da bola de basquete na peneira abriu minha mente! Eu já tinha gastado uma fortuna em cremes que prometiam mundos e fundos e só deixavam o rosto oleoso. Estou no final do segundo pote do Rosa Oriental (peguei o kit de 5 meses) e até minha irmã perguntou o que eu fiz no rosto de tão firme e iluminada que minha pele está!</p>
           <div class="comment-meta">
             <span>Curtir</span> · <span>Responder</span> · <span>❤️ 47</span> · <span>Há 3 horas</span>
           </div>
@@ -955,6 +1084,13 @@
         </div>
       </div>
     </section>
+
+    <!-- FECHAMENTO PÓS-COMENTÁRIOS (P.S. Duplo Sabri Suby 100% Meta Safe) -->
+    <div class="ps-closing-box">
+      <p><strong>Nota Final para as Leitoras:</strong> Se você já tentou cuidar da pele apenas por fora com cremes comuns, experimente nutrir sua pele de dentro para fora com a tecnologia japonesa do <strong>Rosa Oriental</strong>. Com o <strong>Desafio de 90 Dias + Frete Grátis</strong>, você pode testar na sua própria rotina com total segurança e tranquilidade.</p>
+      <a href="https://rosaoriental-oficial.vercel.app/" class="cta-btn-green js-funnel-link">>> VERIFICAR KITS COM FRASCOS GRÁTIS NO SITE OFICIAL <<</a>
+      <span class="cta-sub">🔒 Acesso direto à página oficial do fabricante · Em até 12x ou PIX com envio rápido</span>
+    </div>
 
   </main>
 
