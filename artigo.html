@@ -222,6 +222,128 @@
       line-height: 1.55;
     }
 
+    /* EXPERT EDITORIAL CALLOUT (1st Fold Visual Anchor) */
+    .expert-callout {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      background: linear-gradient(135deg, #fdf0f2, #faf3f0);
+      border-left: 5px solid var(--burgundy);
+      border-radius: 0 16px 16px 0;
+      padding: 22px 26px;
+      margin: 30px 0 34px;
+      box-shadow: 0 6px 20px rgba(122, 28, 51, 0.07);
+    }
+    .expert-callout-img {
+      width: 88px;
+      height: 88px;
+      border-radius: 50%;
+      object-fit: cover;
+      object-position: top center;
+      border: 3px solid var(--white);
+      box-shadow: 0 4px 12px rgba(122, 28, 51, 0.15);
+      flex-shrink: 0;
+      background: var(--white);
+    }
+    .expert-callout-body p {
+      font-size: 18.5px !important;
+      font-style: italic;
+      font-weight: 600;
+      color: var(--burgundy-dark) !important;
+      margin: 0 0 8px !important;
+      line-height: 1.5;
+    }
+    .expert-callout-meta {
+      font-family: 'Inter', sans-serif;
+      font-size: 12.5px;
+      font-weight: 600;
+      color: var(--soft);
+      display: block;
+    }
+    @media (max-width: 560px) {
+      .expert-callout {
+        flex-direction: column;
+        text-align: center;
+        border-left: none;
+        border-top: 4px solid var(--burgundy);
+        border-radius: 14px;
+        padding: 20px 18px;
+        gap: 12px;
+      }
+      .expert-callout-img {
+        width: 78px;
+        height: 78px;
+      }
+      .expert-callout-body p {
+        font-size: 17px !important;
+      }
+    }
+
+    /* MID-ARTICLE QUALIFIED BRIDGE CTA */
+    .mid-cta-card {
+      background: linear-gradient(145deg, #fffdf9 0%, #fdf4f5 100%);
+      border: 2px solid #e5c5cb;
+      border-radius: 18px;
+      padding: 24px 22px;
+      margin: 28px 0 36px;
+      text-align: center;
+      box-shadow: 0 10px 28px rgba(122, 28, 51, 0.08);
+    }
+    .mid-cta-badge {
+      display: inline-block;
+      font-family: 'Inter', sans-serif;
+      font-size: 11px;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 1.4px;
+      color: var(--burgundy);
+      background: var(--rose-pale);
+      border: 1px solid var(--rose-light);
+      padding: 4px 12px;
+      border-radius: 50px;
+      margin-bottom: 10px;
+    }
+    .mid-cta-card h4 {
+      font-family: 'Playfair Display', serif;
+      font-size: 21px;
+      color: var(--dark);
+      margin: 0 0 8px;
+      line-height: 1.35;
+    }
+    .mid-cta-card p {
+      font-family: 'Inter', sans-serif;
+      font-size: 14.5px !important;
+      color: var(--mid) !important;
+      margin: 0 auto 16px !important;
+      max-width: 560px;
+      line-height: 1.55;
+    }
+    .mid-cta-btn {
+      display: inline-block;
+      background: linear-gradient(180deg, #2fb351 0%, #1e8738 100%);
+      color: #ffffff !important;
+      font-family: 'Inter', sans-serif;
+      font-size: 15px;
+      font-weight: 800;
+      text-decoration: none;
+      padding: 15px 26px;
+      border-radius: 12px;
+      box-shadow: 0 6px 18px rgba(37, 150, 68, 0.32);
+      transition: transform 0.15s ease, box-shadow 0.15s ease;
+      line-height: 1.3;
+    }
+    .mid-cta-btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 22px rgba(37, 150, 68, 0.42);
+    }
+    .mid-cta-sub {
+      display: block;
+      font-family: 'Inter', sans-serif;
+      font-size: 12px;
+      color: var(--soft);
+      margin-top: 10px;
+    }
+
     /* SCIENCE DALTON BOX + PROGRESS BARS */
     .science-box {
       background: var(--white);
@@ -851,8 +973,12 @@
 
     <p>É apenas uma questão de física — porque a maioria dos produtos tenta agir do lado errado da pele.</p>
 
-    <div class="pull-quote">
-      <p>"Sua pele não foi criada pela natureza para ser uma esponja que absorve cremes. Ela foi criada para ser um escudo impenetrável que barra quase tudo do lado de fora."</p>
+    <div class="expert-callout">
+      <img class="expert-callout-img" src="assets/especialista-editorial.png" alt="Consultoria Científica Editorial em Longevidade Cutânea">
+      <div class="expert-callout-body">
+        <p>"Sua pele não foi criada pela natureza para ser uma esponja que absorve cremes. Ela foi criada para ser um escudo impenetrável que barra quase tudo do lado de fora."</p>
+        <span class="expert-callout-meta">📌 Caderno de Dermatologia & Nutrição Celular · Síntese sobre a Barreira Cutânea</span>
+      </div>
     </div>
 
     <h2>O Segredo da "Bola de Basquete na Peneira" (A Regra dos 500 Daltons)</h2>
@@ -868,6 +994,11 @@
     <p>A molécula de colágeno presente nos cremes comuns — mesmo naqueles importados que custam R$ 300 ou R$ 500 — é gigantesca. Ela possui cerca de <strong>300.000 Daltons</strong>.</p>
 
     <p>Ou seja: tentar fazer um creme atravessar até a camada profunda da firmeza é, literalmente, como <strong>tentar passar uma bola de basquete pelos furinhos de uma peneira fina</strong>. Fisicamente, ela não passa.</p>
+
+    <figure class="editorial-figure">
+      <img src="assets/molecula-hialuronico.jpg" alt="Estrutura molecular de alta biodisponibilidade para nutrição profunda da pele" loading="lazy">
+      <figcaption class="editorial-caption">Enquanto macromoléculas de cremes comuns (300.000 Daltons) estacionam na superfície, micro-partículas biodisponíveis atuam de dentro para fora diretamente na matriz dérmica.</figcaption>
+    </figure>
 
     <!-- SCIENCE DALTON BOX + ABSORPTION BARS -->
     <div class="science-box">
@@ -946,10 +1077,10 @@
     <p>Foi exatamente esse desafio que a engenharia nutricional japonesa resolveu com a tecnologia conhecida como <strong>Efeito "Carro-Forte"</strong>.</p>
 
     <figure class="editorial-figure">
-      <a href="#revelacao" class="clickable-media">
+      <a href="https://rosaoriental-oficial.vercel.app/" class="clickable-media js-funnel-link" aria-label="Conhecer a fórmula oficial com Nano-Cápsula Blindada">
         <img src="assets/nano-capsula.jpg" alt="Representação da Tecnologia de Nano-Cápsula Blindada">
       </a>
-      <figcaption class="editorial-caption">Ilustração científica da blindagem protetora: a cápsula atravessa o ambiente ácido intacta e libera 98,7% dos bioativos no ponto ideal de absorção.</figcaption>
+      <figcaption class="editorial-caption">Ilustração científica da blindagem protetora: a cápsula atravessa o ambiente ácido intacta e libera 98,7% dos bioativos no ponto ideal de absorção. (Toque na imagem para conhecer a fórmula oficial)</figcaption>
     </figure>
 
     <p>Em vez de deixar os nutrientes expostos, os pesquisadores protegeram micro-partículas puras dentro de uma <strong>Nano-Cápsula Blindada</strong>.</p>
@@ -957,6 +1088,15 @@
     <p>Essa cápsula atravessa o estômago totalmente fechada e protegida, exatamente como um carro-forte blindado.</p>
 
     <p>Ela só libera os ativos quando chega ao intestino delgado, onde o organismo absorve <strong>98,7% dos nutrientes para a corrente sanguínea</strong>. Dali, eles nutrem de dentro para fora o rosto, o pescoço e o colo enquanto você descansa.</p>
+
+    <!-- PASSAGEM QUALIFICADA INTERMEDIÁRIA (Para leitoras já convencidas pelo mecanismo) -->
+    <div class="mid-cta-card">
+      <span class="mid-cta-badge">Fórmula Japonesa Oficial no Brasil · Rosa Oriental</span>
+      <h4>Já entendeu por que a nutrição precisa vir de dentro para fora?</h4>
+      <p>No Brasil, a fórmula original com <strong>Nano-Cápsula Blindada (98,7% de biodisponibilidade)</strong> e garantia de 90 dias foi batizada de <strong>Rosa Oriental</strong>. Se você já deseja conferir os kits promocionais com frascos extras grátis, acesse direto abaixo ou continue lendo para ver os 4 bioativos da composição:</p>
+      <a href="https://rosaoriental-oficial.vercel.app/" class="mid-cta-btn js-funnel-link">👉 CONHECER O ROSA ORIENTAL E VER KITS OFICIAIS</a>
+      <span class="mid-cta-sub">🔒 Site Oficial do Fabricante · Envio com Frete Grátis e Parcelamento em até 12x</span>
+    </div>
 
     <h2>Os 4 Pilares Visíveis no Espelho (Quando a Nutrição Chega na Raiz)</h2>
 
