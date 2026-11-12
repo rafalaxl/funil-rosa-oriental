@@ -926,6 +926,87 @@
       margin-bottom: 18px !important;
       line-height: 1.65;
     }
+
+    /* MICRO-COMMITMENT AGE SELECTOR (SABRI SUBY) */
+    .micro-quiz-box {
+      background: linear-gradient(155deg, #fffdf9 0%, #fdf1f3 100%);
+      border: 2px solid var(--burgundy);
+      border-radius: 20px;
+      padding: 28px 24px;
+      margin: 34px 0;
+      text-align: center;
+      box-shadow: 0 12px 32px rgba(122, 28, 51, 0.12);
+    }
+    .micro-quiz-badge {
+      display: inline-block;
+      font-family: 'Inter', sans-serif;
+      font-size: 11px;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      color: var(--white);
+      background: var(--burgundy);
+      padding: 5px 14px;
+      border-radius: 50px;
+      margin-bottom: 12px;
+    }
+    .micro-quiz-box h3 {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(20px, 3.6vw, 25px);
+      color: var(--dark);
+      margin-bottom: 8px;
+      line-height: 1.3;
+    }
+    .micro-quiz-box p {
+      font-family: 'Inter', sans-serif;
+      font-size: 14.5px !important;
+      color: var(--mid) !important;
+      margin: 0 auto 18px !important;
+      max-width: 540px;
+      line-height: 1.5;
+    }
+    .quiz-options {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 12px;
+      max-width: 480px;
+      margin: 0 auto;
+    }
+    .quiz-option-btn {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background: var(--white);
+      border: 2px solid #e2bec4;
+      border-radius: 14px;
+      padding: 15px 20px;
+      font-family: 'Inter', sans-serif;
+      font-size: 15.5px;
+      font-weight: 700;
+      color: var(--burgundy-dark);
+      text-decoration: none;
+      box-shadow: 0 4px 12px rgba(122, 28, 51, 0.06);
+      transition: all 0.18s ease;
+    }
+    .quiz-option-btn:hover {
+      background: var(--burgundy);
+      color: var(--white);
+      border-color: var(--burgundy);
+      transform: translateY(-2px);
+      box-shadow: 0 8px 20px rgba(122, 28, 51, 0.22);
+    }
+    .quiz-option-arrow {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      background: var(--green);
+      color: var(--white);
+      font-size: 13px;
+      font-weight: 800;
+      padding: 6px 12px;
+      border-radius: 8px;
+      letter-spacing: 0.4px;
+    }
   </style>
 </head>
 <body>
@@ -935,43 +1016,57 @@
   <header class="editorial-header">
     <div class="editorial-header-inner">
       <div class="portal-brand">Ciência & Pele Viva <span>Editorial</span></div>
-      <div class="advertorial-badge">Artigo Patrocinado · Saúde & Beleza</div>
+      <div class="advertorial-badge">Reportagem Especial · Saúde & Beleza</div>
     </div>
   </header>
 
-  <!-- HERO (Fórmula dos 4 Us de Sabri Suby + 100% Meta Ads Safe) -->
+  <!-- HERO (Congruência Total com o Anúncio do Casal e do Criado-Mudo + Regra dos 500 Daltons) -->
   <section class="hero">
-    <span class="hero-eyebrow">Especial Longevidade Feminina · Caderno de Ciência</span>
-    <h1>Por Que Cremes Tradicionais <em>Quase Nunca Passam da Superfície</em> — E a Descoberta Japonesa que Está Fazendo Mulheres 45+ Sorrirem no Espelho de Novo</h1>
-    <p class="hero-sub">Pesquisadores explicam o detalhe físico pelo qual grande parte dos cremes noturnos sai na água do banho no dia seguinte — e como a tecnologia japonesa do "Carro-Forte" nutre a firmeza do rosto, pescoço e colo de dentro para fora.</p>
+    <span class="hero-eyebrow">O Mistério do Criado-Mudo · Reportagem Especial</span>
+    <h1>"Achei Que Minha Esposa Tinha Feito Algum Procedimento Escondida..." — Até Descobrir Por Que <em>aquele Vidro Escuro de Creme Estava Vazio</em> ao Lado do Copo D'Água</h1>
+    <p class="hero-sub">Pesquisadores explicam a famosa <strong>Regra dos 500 Daltons</strong> (por que 98% dos cremes caros não passam pelos poros) — e revelam a cápsula noturna japonesa que está substituindo pilhas de potes no criado-mudo das brasileiras 45+.</p>
     <div class="meta-bar">
       <span>📝 Por Redação Científica</span>
       <span>•</span>
       <span id="current-date">Atualizado hoje</span>
       <span>•</span>
-      <span>⏱ Leitura rápida: 3 minutos</span>
+      <span>⏱ Leitura rápida: 2 minutos</span>
     </div>
   </section>
 
   <!-- MAIN ARTICLE CONTENT -->
   <main class="content">
 
-    <!-- LEAD "DEBAIXO DA UNHA" EM ESPELHAMENTO EDITORIAL (100% Meta-Safe: sem acusação de atributo pessoal) -->
-    <p>Basta conversar com mulheres vaidosas e cuidadosas acima dos 45 anos para ouvir uma história que se repete quase todas as noites.</p>
+    <!-- IMAGEM DE ABERTURA NA 1ª DOBRA (CONGRUÊNCIA VISUAL IMEDIATA COM O ANÚNCIO) -->
+    <figure class="editorial-figure" style="margin-top: 0; margin-bottom: 28px;">
+      <a href="https://rosaoriental-oficial.vercel.app/" class="clickable-media js-funnel-link" aria-label="Ver o segredo noturno que substituiu o vidro de creme no criado-mudo">
+        <img src="assets/criado-mudo-frasco-vazio.jpg" alt="O vidro escuro antigo e vazio no criado-mudo ao lado do copo d'água e da cápsula noturna">
+      </a>
+      <figcaption class="editorial-caption"><strong>A cena que intrigou o marido de Helena (54 anos):</strong> O antigo vidro escuro de sérum importado no criado-mudo estava velho e completamente vazio — o verdadeiro segredo noturno dela era tomado com o copo d'água ao lado. <em>(Toque na imagem para conhecer o protocolo noturno)</em></figcaption>
+    </figure>
 
-    <p>A casa fica em silêncio. Diante do espelho do banheiro, vem aquele ritual feito com todo carinho: aplicar um creme facial caro na esperança de acordar com a pele mais firme e descansada.</p>
+    <!-- LEAD "SLIPPERY SLIDE" (ESCORREGADOR SABRI SUBY - 5ª SÉRIE, FRASES CURTAS) -->
+    <p>Quando Carlos olhou para o rosto da esposa, Helena (54 anos), sob a luz clara da manhã, ele teve quase certeza de uma coisa:</p>
 
-    <p>Na hora, a superfície da pele fica macia e perfumada. Parece até que, desta vez, o resultado vai ser diferente.</p>
+    <p><em>"Ela fez algum procedimento estético em clínica e não me contou."</em></p>
 
-    <p><strong>Mas na manhã seguinte, ao lavar o rosto ou tirar uma foto de perto na luz natural do dia, vem a frustração silenciosa.</strong></p>
+    <p>Afinal, o aspecto cansado ao redor dos olhos e da boca tinha dado lugar a um viço firme e iluminado — até mesmo no pescoço e no colo, que ela antes costumava esconder com blusas fechadas.</p>
 
-    <p>As linhas ao redor da boca e dos olhos parecem exatamente no mesmo lugar. E a pele do pescoço e do colo continua pedindo uma atenção especial — muitas vezes fazendo com que blusas mais fechadas ou um lenço elegante virem companhia constante.</p>
+    <p>Curioso, naquela mesma noite ele reparou na cabeceira da cama dela.</p>
 
-    <p>Diante disso, a dúvida que surge para milhares de brasileiras é sempre a mesma: <em>"Se eu cuido tão bem da minha rotina, por que os cremes parecem parar de fazer efeito depois dos 40?"</em></p>
+    <p>Lá estavam <strong>um frasco de vidro escuro</strong> e <strong>um copo d'água cheio</strong>.</p>
 
-    <p>A resposta da dermatologia moderna traz um alívio imediato: <strong>não é falta de cuidado seu.</strong></p>
+    <p>Achando que tinha descoberto mais um daqueles séruns franceses de R$ 400, Carlos pegou o vidrinho escuro na mão.</p>
 
-    <p>É apenas uma questão de física — porque a maioria dos produtos tenta agir do lado errado da pele.</p>
+    <p><strong>Mas levou um susto: o vidro estava velho, ressecado e completamente vazio.</strong></p>
+
+    <p>Helena entrou no quarto, deu risada da cara do marido e revelou o que realmente tinha acontecido:</p>
+
+    <div class="pull-quote">
+      <p>"Eu parei de passar cremes caros no rosto há dois meses. Deixei esse vidro velho e vazio aí no criado-mudo só para me lembrar de nunca mais jogar dinheiro no ralo. O que mudou a minha pele não se passa por fora — é uma cápsula japonesa que eu acabei de tomar com esse copo d'água antes de dormir!"</p>
+    </div>
+
+    <p>O que Helena descobriu por acaso em uma reportagem científica explica a maior frustração silenciosa das mulheres cuidadosas acima dos 40 anos: <strong>não era falta de cuidado. Os cremes apenas tentavam agir do lado errado da pele.</strong></p>
 
     <div class="expert-callout">
       <img class="expert-callout-img" src="assets/especialista-editorial.png" alt="Consultoria Científica Editorial em Longevidade Cutânea">
@@ -983,38 +1078,40 @@
 
     <h2>O Segredo da "Bola de Basquete na Peneira" (A Regra dos 500 Daltons)</h2>
 
-    <p>Existe um princípio científico amplamente documentado na dermatologia mundial chamado <strong>Regra dos 500 Daltons</strong> (estudado na Universidade de Amsterdam).</p>
+    <p>Na dermatologia mundial, existe uma lei física comprovada na Universidade de Amsterdam chamada <strong>Regra dos 500 Daltons</strong>.</p>
 
-    <p>Funciona de forma muito simples: para proteger o nosso corpo do ambiente externo, os poros da camada superficial da pele agem como uma peneira finíssima.</p>
+    <p>É muito simples de imaginar: os poros da superfície da nossa pele funcionam como uma peneira finíssima.</p>
 
-    <p>Essa barreira natural só permite a passagem de moléculas minúsculas, de no máximo <strong>500 Daltons</strong> de tamanho.</p>
+    <p>Para proteger o corpo, essa barreira só deixa entrar partículas minúsculas, de no máximo <strong>500 Daltons</strong>.</p>
 
-    <p><strong>E é justamente aqui que mora o detalhe que pouca gente conhece:</strong></p>
+    <p><strong>E aqui está o motivo pelo qual aquele vidro no criado-mudo ficou vazio para sempre:</strong></p>
 
-    <p>A molécula de colágeno presente nos cremes comuns — mesmo naqueles importados que custam R$ 300 ou R$ 500 — é gigantesca. Ela possui cerca de <strong>300.000 Daltons</strong>.</p>
+    <p>A molécula de colágeno dentro dos cremes faciais — mesmo nos mais caros do mundo — mede cerca de <strong>300.000 Daltons</strong>.</p>
 
-    <p>Ou seja: tentar fazer um creme atravessar até a camada profunda da firmeza é, literalmente, como <strong>tentar passar uma bola de basquete pelos furinhos de uma peneira fina</strong>. Fisicamente, ela não passa.</p>
+    <p>Ou seja: passar creme esperando firmar a camada profunda da pele é como <strong>tentar passar uma bola de basquete pelos furinhos de uma peneira fina</strong>. Ela fica parada por fora e vai embora na água do banho de manhã.</p>
 
     <figure class="editorial-figure">
-      <img src="assets/molecula-hialuronico.jpg" alt="Estrutura molecular de alta biodisponibilidade para nutrição profunda da pele" loading="lazy">
-      <figcaption class="editorial-caption">Enquanto macromoléculas de cremes comuns (300.000 Daltons) estacionam na superfície, micro-partículas biodisponíveis atuam de dentro para fora diretamente na matriz dérmica.</figcaption>
+      <a href="https://rosaoriental-oficial.vercel.app/" class="clickable-media js-funnel-link" aria-label="Entender como as micro-partículas nutrem a pele de dentro para fora">
+        <img src="assets/molecula-hialuronico.jpg" alt="Estrutura molecular de alta biodisponibilidade para nutrição profunda da pele" loading="lazy">
+      </a>
+      <figcaption class="editorial-caption">Enquanto cremes comuns (300.000 Daltons) estacionam na superfície, a nutrição celular em cápsula age de dentro para fora direto na raiz da firmeza. <em>(Toque para ver a apresentação completa)</em></figcaption>
     </figure>
 
     <!-- SCIENCE DALTON BOX + ABSORPTION BARS -->
     <div class="science-box">
       <div class="label">📐 Comparativo Laboratorial de Absorção</div>
       <h3>Por que os cremes ficam retidos na superfície?</h3>
-      <p style="font-size:15.5px; margin-bottom:12px;">Compare o tamanho máximo que a barreira da pele permite entrar com o tamanho das moléculas nos cosméticos tradicionais:</p>
+      <p style="font-size:15.5px; margin-bottom:12px;">Veja a diferença brutal entre o tamanho do poro e o tamanho da molécula dos cosméticos comuns:</p>
 
       <div class="dalton-visual">
         <div>
           <div class="number">500</div>
-          <p class="desc"><strong>Daltons</strong><br>Tamanho máximo que passa pela barreira da pele</p>
+          <p class="desc"><strong>Daltons</strong><br>Tamanho máximo que passa pelo poro da pele</p>
         </div>
         <div class="vs">VS</div>
         <div>
           <div class="number">300.000</div>
-          <p class="desc"><strong>Daltons</strong><br>Tamanho da molécula nos cremes comuns</p>
+          <p class="desc"><strong>Daltons</strong><br>Tamanho da molécula nos cremes faciais</p>
         </div>
       </div>
 
@@ -1031,7 +1128,7 @@
 
         <div class="bar-group">
           <div class="bar-header">
-            <span>Colágeno em Pó Comum (Sem proteção contra o ácido gástrico)</span>
+            <span>Colágeno em Pó Comum (Dissolvido pelo ácido do estômago)</span>
             <span>~8,5%</span>
           </div>
           <div class="bar-track"><div class="bar-fill-mid"></div></div>
@@ -1039,7 +1136,7 @@
 
         <div class="bar-group">
           <div class="bar-header">
-            <span style="color:var(--burgundy); font-weight:700;">Tecnologia Japonesa de Nano-Cápsula Blindada ("Carro-Forte")</span>
+            <span style="color:var(--burgundy); font-weight:700;">Nano-Cápsula Blindada Japonesa ("Efeito Carro-Forte")</span>
             <span style="color:var(--green); font-weight:800;">98,7%</span>
           </div>
           <div class="bar-track"><div class="bar-fill-high"></div></div>
@@ -1047,102 +1144,65 @@
       </div>
     </div>
 
-    <h2>Os 3 Equívocos que Fazem Tantas Mulheres Gastarem Sem Ver Resultado</h2>
+    <!-- PONTE RÁPIDA NO 1º TERÇO (PARA LEITORAS APRESSADAS - VAI DIRETO PARA VENDAS.HTML) -->
+    <a href="https://rosaoriental-oficial.vercel.app/" class="editorial-jump js-funnel-link">👉 Quer ir direto ao ponto? Toque aqui para ver a apresentação oficial da Nano-Cápsula Noturna (Rosa Oriental) →</a>
 
-    <div class="myths-block">
-      <div class="myths-header">💡 Antes de investir em mais um pote para a prateleira do banheiro, veja o que os estudos mostram sobre a pele madura:</div>
+    <h2>A Descoberta Japonesa do "Carro-Forte" (Por Que Apenas um Copo D'Água Antes de Dormir Muda Tudo)</h2>
 
-      <div class="myth-item">
-        <div class="myth-label">❌ Mito 1 — "Quanto mais caro o creme importado, mais fundo ele age"</div>
-        <div class="myth-truth">O preço do frasco não altera as leis da física. Moléculas grandes estacionam na camada externa, criam uma película temporária de maciez por algumas horas e saem na água do banho na manhã seguinte.</div>
-      </div>
+    <p>Muitas mulheres até tentaram tomar colágeno em pó comum pela manhã, mas desistiram porque não viam diferença no espelho.</p>
 
-      <div class="myth-item">
-        <div class="myth-label">❌ Mito 2 — "Apenas procedimentos caros em clínicas resolvem"</div>
-        <div class="myth-truth">Cuidar apenas da parte externa não repõe o "colchão interno" de sustentação da pele. A jovialidade mais elogiada vem de devolver os tijolos nutricionais de dentro para fora — preservando sua expressão natural.</div>
-      </div>
+    <p>O motivo é simples: <strong>o ácido do estômago destrói mais de 90% dos pós comuns</strong> antes que eles cheguem perto da pele.</p>
 
-      <div class="myth-item">
-        <div class="myth-label">❌ Mito 3 — "Qualquer colágeno em pó entrega o mesmo resultado"</div>
-        <div class="myth-truth">Muitas mulheres tomam colágeno em pó por meses e desistem por um motivo simples: <strong>o ácido do estômago</strong>. O suco gástrico dissolve proteínas desprotegidas e degrada grande parte dos nutrientes antes que eles alcancem a corrente sanguínea.</div>
-      </div>
-    </div>
-
-    <a href="#revelacao" class="editorial-jump">👇 Já conhece a Regra dos 500 Daltons? Toque aqui para pular direto para a tecnologia japonesa de Nano-Cápsula Blindada</a>
-
-    <h2>A Solução Japonesa: O Efeito "Carro-Forte" de Proteção Celular</h2>
-
-    <p>Se os cremes comuns param na barreira externa da pele, e os pós tradicionais perdem força no estômago... <strong>como entregar os nutrientes intactos até as camadas profundas do rosto?</strong></p>
-
-    <p>Foi exatamente esse desafio que a engenharia nutricional japonesa resolveu com a tecnologia conhecida como <strong>Efeito "Carro-Forte"</strong>.</p>
+    <p>Para resolver isso, pesquisadores japoneses desenvolveram o <strong>Efeito "Carro-Forte" de Proteção Celular</strong>.</p>
 
     <figure class="editorial-figure">
       <a href="https://rosaoriental-oficial.vercel.app/" class="clickable-media js-funnel-link" aria-label="Conhecer a fórmula oficial com Nano-Cápsula Blindada">
         <img src="assets/nano-capsula.jpg" alt="Representação da Tecnologia de Nano-Cápsula Blindada">
       </a>
-      <figcaption class="editorial-caption">Ilustração científica da blindagem protetora: a cápsula atravessa o ambiente ácido intacta e libera 98,7% dos bioativos no ponto ideal de absorção. (Toque na imagem para conhecer a fórmula oficial)</figcaption>
+      <figcaption class="editorial-caption">A Nano-Cápsula Blindada atravessa o estômago intacta como um carro-forte e libera <strong>98,7% dos bioativos</strong> direto na corrente sanguínea enquanto você dorme. <em>(Toque na imagem para ver como funciona)</em></figcaption>
     </figure>
 
-    <p>Em vez de deixar os nutrientes expostos, os pesquisadores protegeram micro-partículas puras dentro de uma <strong>Nano-Cápsula Blindada</strong>.</p>
+    <p>Tomada com um simples copo d'água cerca de 2 horas antes de dormir, essa cápsula blindada passa ilesa pelo estômago e libera <strong>4 bioativos reconstrutores</strong> exatamente no pico noturno de regeneração celular.</p>
 
-    <p>Essa cápsula atravessa o estômago totalmente fechada e protegida, exatamente como um carro-forte blindado.</p>
+    <p>Assim, os nutrientes chegam pela corrente sanguínea direto à camada profunda do rosto, pescoço e colo — onde nenhum creme jamais conseguiu chegar.</p>
 
-    <p>Ela só libera os ativos quando chega ao intestino delgado, onde o organismo absorve <strong>98,7% dos nutrientes para a corrente sanguínea</strong>. Dali, eles nutrem de dentro para fora o rosto, o pescoço e o colo enquanto você descansa.</p>
-
-    <!-- PASSAGEM QUALIFICADA INTERMEDIÁRIA (Para leitoras já convencidas pelo mecanismo) -->
-    <div class="mid-cta-card">
-      <span class="mid-cta-badge">Fórmula Japonesa Oficial no Brasil · Rosa Oriental</span>
-      <h4>Já entendeu por que a nutrição precisa vir de dentro para fora?</h4>
-      <p>No Brasil, a fórmula original com <strong>Nano-Cápsula Blindada (98,7% de biodisponibilidade)</strong> e garantia de 90 dias foi batizada de <strong>Rosa Oriental</strong>. Se você já deseja conferir os kits promocionais com frascos extras grátis, acesse direto abaixo ou continue lendo para ver os 4 bioativos da composição:</p>
-      <a href="https://rosaoriental-oficial.vercel.app/" class="mid-cta-btn js-funnel-link">👉 CONHECER O ROSA ORIENTAL E VER KITS OFICIAIS</a>
-      <span class="mid-cta-sub">🔒 Site Oficial do Fabricante · Envio com Frete Grátis e Parcelamento em até 12x</span>
-    </div>
-
-    <h2>Os 4 Pilares Visíveis no Espelho (Quando a Nutrição Chega na Raiz)</h2>
-
-    <p>Ao entregar os 4 bioativos essenciais diretamente pela via interna todas as noites, o cuidado atua em 4 frentes complementares:</p>
-
-    <div class="pillars">
-      <div class="pillar-card">
-        <img src="assets/ingrediente-acido-hialuronico.webp" alt="Preenchimento e Hidratação Profunda">
-        <h4>1. O "Efeito Esponja" de Hidratação</h4>
-        <p>O Ácido Hialurônico retém até 1.000x seu peso em água nas camadas internas. Ajuda a suavizar a aparência das linhas finas de dentro para fora.</p>
-      </div>
-      <div class="pillar-card">
-        <img src="assets/ingrediente-colageno.webp" alt="Sustentação do Rosto, Pescoço e Colo">
-        <h4>2. O "Colchão" de Sustentação</h4>
-        <p>Micro-partículas de Colágeno Japonês que fornecem os tijolos estruturais para apoiar a firmeza e elasticidade do rosto, pescoço e colo.</p>
-      </div>
-      <div class="pillar-card">
-        <img src="assets/ingrediente-vitamina-c.webp" alt="Luminosidade e Viço Natural">
-        <h4>3. Despertar do "Viço Descansado"</h4>
-        <p>Nos cremes, a Vitamina C oxida em contato com o ar. Na cápsula protegida, ela chega 100% ativa para apoiar o brilho natural e uniformizar o tom da pele.</p>
-      </div>
-      <div class="pillar-card">
-        <img src="assets/ingrediente-vitamina-b5.webp" alt="Barreira Protetora de Maciez">
-        <h4>4. A "Trava" de Maciez Contínua</h4>
-        <p>A Vitamina B5 (Pantenol) fortalece a barreira natural da pele. Ajuda a reter a hidratação ao longo do dia e mantém o toque macio e aveludado.</p>
-      </div>
-    </div>
-
-    <!-- THE TEASE / FASCINATION BULLETS (Sabri Suby Volume 1 & 2 - 100% Meta Safe) -->
+    <!-- THE TEASE / BULLETS DE FASCINAÇÃO (CRIA COCEIRA MENTAL SEM ENTREGAR A BULA DE GRAÇA) -->
     <div class="fascination-box">
-      <h3>Por que tantas mulheres 45+ estão adotando esse ritual noturno no Brasil?</h3>
+      <h3>O que você vai descobrir na Apresentação Oficial do Rosa Oriental:</h3>
       <ul class="fascination-list">
-        <li><strong>Praticidade de 10 Segundos à Noite:</strong> Como o hábito de tomar apenas <strong>1 cápsula cerca de 2 horas antes de dormir</strong> acompanha o ciclo natural de renovação noturna da pele.</li>
-        <li><strong>Custo-Benefício Inteligente:</strong> Como nutrir a pele de dentro para fora custa <strong>menos que um café expresso por dia</strong> — substituindo pilhas de potes caros na prateleira.</li>
-        <li><strong>Lote Oficial com Frascos Extras Grátis:</strong> Como funciona a condição especial da distribuidora oficial para novas clientes — com pacotes que incluem <strong>até 2 frascos extras grátis e Frete Grátis</strong>.</li>
-        <li><strong>O Desafio de 90 Dias (Risco Zero):</strong> Por que o fabricante permite que você faça o teste real por 3 meses completos, com reembolso integral caso não fique encantada com os resultados.</li>
+        <li><strong>Os 4 Bioativos do "Efeito Esponja e Sustentação":</strong> Quais são os 4 nutrientes exatos dentro da cápsula rosa que retêm até 1.000x seu peso em água e devolvem o "colchão" de firmeza da pele madura.</li>
+        <li><strong>O Ritual Noturno de 10 Segundos:</strong> Por que tomar 1 cápsula no criado-mudo antes de dormir aproveita o horário biológico em que sua pele se reconstrói 3x mais rápido.</li>
+        <li><strong>Economia Inteligente:</strong> Como substituir potes de cremes de R$ 300+ por um cuidado interno que custa <strong>menos que um café expresso por dia</strong>.</li>
+        <li><strong>Lote Promocional com Frascos Grátis + Desafio 90 Dias:</strong> Como testar o protocolo em casa por 3 meses completos com <strong>Risco Zero</strong> (se você não amar o que vê no espelho, recebe 100% do valor de volta).</li>
       </ul>
     </div>
 
-    <p>No Brasil, a fórmula original com a tecnologia de Nano-Cápsula Blindada e conformidade com a ANVISA (RDC 240/18) foi batizada de <strong>Rosa Oriental</strong>.</p>
+    <!-- MICRO-COMPROMETIMENTO INTERATIVO DE 1 TOQUE (SABRI SUBY) -->
+    <div class="micro-quiz-box" id="revelacao">
+      <span class="micro-quiz-badge">Passo 1 de 2 · Consulta Rápida de Protocolo</span>
+      <h3>Qual é a sua faixa de idade atual?</h3>
+      <p>Toque na sua faixa etária abaixo para abrir a apresentação oficial do <strong>Rosa Oriental</strong> e ver o protocolo noturno ideal para a sua pele:</p>
+      <div class="quiz-options">
+        <a href="https://rosaoriental-oficial.vercel.app/?idade=40-49" class="quiz-option-btn js-funnel-link">
+          <span>🌸 Tenho entre 40 e 49 anos</span>
+          <span class="quiz-option-arrow">VER PROTOCOLO →</span>
+        </a>
+        <a href="https://rosaoriental-oficial.vercel.app/?idade=50-59" class="quiz-option-btn js-funnel-link">
+          <span>✨ Tenho entre 50 e 59 anos</span>
+          <span class="quiz-option-arrow">VER PROTOCOLO →</span>
+        </a>
+        <a href="https://rosaoriental-oficial.vercel.app/?idade=60-mais" class="quiz-option-btn js-funnel-link">
+          <span>👑 Tenho 60 anos ou mais</span>
+          <span class="quiz-option-arrow">VER PROTOCOLO →</span>
+        </a>
+      </div>
+    </div>
 
     <!-- PRODUCT REVEAL & 90-DAY GUARANTEE -->
-    <div class="product-showcase" id="revelacao">
-      <span class="product-showcase-badge">Fórmula Original · Autorizado ANVISA RDC 240/18</span>
-      <h3>Conheça o Rosa Oriental Oficial</h3>
-      <p>Apenas 1 cápsula à noite (2 horas antes de dormir) para nutrir e apoiar as camadas profundas do seu rosto, pescoço e colo enquanto você descansa.</p>
+    <div class="product-showcase">
+      <span class="product-showcase-badge">Fórmula Original no Brasil · Autorizado ANVISA RDC 240/18</span>
+      <h3>Rosa Oriental: O Verdadeiro Segredo do Criado-Mudo</h3>
+      <p>Veja na página seguinte os 4 bioativos completos da fórmula, depoimentos reais de clientes e os pacotes oficiais com <strong>até 2 frascos extras grátis + Frete Grátis</strong>.</p>
 
       <a href="https://rosaoriental-oficial.vercel.app/" class="clickable-media js-funnel-link" aria-label="Ver apresentação oficial e kits do Rosa Oriental">
         <img class="product-showcase-img" src="assets/pote-garantia-90dias.png" alt="Frasco Original Rosa Oriental com Garantia de 90 Dias — Toque para abrir o Site Oficial">
@@ -1152,25 +1212,25 @@
         <div class="challenge-box">
           <img src="assets/selo-garantia-90dias.png" alt="Selo de Garantia 90 Dias">
           <div>
-            <h4>O Desafio de 90 Dias (Risco Zero)</h4>
-            <p>Você recebe o Rosa Oriental em casa com <strong>Frete Grátis</strong> e faz o teste real. Se em 90 dias você não ficar encantada com a firmeza, hidratação e viço da sua pele no espelho, basta enviar uma mensagem e devolvemos 100% do seu investimento.</p>
+            <h4>Blindado pelo Desafio de 90 Dias (Risco Zero)</h4>
+            <p>Você recebe o Rosa Oriental em casa com <strong>Frete Grátis</strong> e faz o teste real. Se em 90 dias você não ficar encantada com a firmeza, hidratação e viço da sua pele no espelho, devolvemos 100% do seu investimento.</p>
           </div>
         </div>
       </a>
 
       <div class="cta-section">
-        <div class="stock-alert">⚠️ Atenção: Lote atual com Frascos Extras Grátis + Parcelamento em até 12x</div>
+        <div class="stock-alert">⚠️ Lote Oficial no Brasil: Envios Rápidos via Correios + Até 2 Frascos Grátis</div>
         <br>
-        <a href="https://rosaoriental-oficial.vercel.app/" class="cta-btn-green js-funnel-link">>> VERIFICAR DISPONIBILIDADE E KITS COM FRASCOS GRÁTIS <<</a>
-        <span class="cta-sub" style="color:rgba(255,255,255,0.9);">🔒 Toque no botão verde acima para ver a tabela completa e os pacotes promocionais no Site Oficial</span>
+        <a href="https://rosaoriental-oficial.vercel.app/" class="cta-btn-green js-funnel-link">👉 CONHECER O ROSA ORIENTAL E VER COMO FUNCIONA →</a>
+        <span class="cta-sub" style="color:rgba(255,255,255,0.9);">🔒 Toque no botão verde acima para acessar a Apresentação Oficial Completa</span>
       </div>
     </div>
 
-    <p><strong>Nota Importante à Leitora:</strong> Para evitar falsificações, o verdadeiro <strong>Rosa Oriental</strong> não é comercializado em farmácias nem em marketplaces como Mercado Livre, Shopee ou Amazon. A venda oficial com garantia de 90 dias e envio imediato pelos Correios é feita exclusivamente através dos botões oficiais desta matéria.</p>
+    <p><strong>Nota Importante à Leitora:</strong> Para evitar imitações com pós comuns sem blindagem gástrica, o verdadeiro <strong>Rosa Oriental</strong> não é vendido em farmácias nem em sites como Mercado Livre ou Shopee. A distribuição oficial com Garantia de 90 Dias é feita exclusivamente através dos botões desta reportagem.</p>
 
     <div class="cta-section" style="padding-top:10px;">
-      <a href="https://rosaoriental-oficial.vercel.app/" class="cta-btn-green js-funnel-link">>> VER KITS COM DESCONTO E FRETE GRÁTIS <<</a>
-      <span class="cta-sub">Envio rápido e seguro via Correios para todo o Brasil · Compra 100% Protegida</span>
+      <a href="https://rosaoriental-oficial.vercel.app/" class="cta-btn-green js-funnel-link">👉 ACESSAR APRESENTAÇÃO OFICIAL DO ROSA ORIENTAL →</a>
+      <span class="cta-sub">Envio rápido e seguro com Frete Grátis para todo o Brasil · Site 100% Seguro</span>
     </div>
 
     <!-- COMMENTS SECTION (META SAFE) -->
@@ -1227,9 +1287,9 @@
 
     <!-- FECHAMENTO PÓS-COMENTÁRIOS (P.S. Duplo Sabri Suby 100% Meta Safe) -->
     <div class="ps-closing-box">
-      <p><strong>Nota Final para as Leitoras:</strong> Se você já tentou cuidar da pele apenas por fora com cremes comuns, experimente nutrir sua pele de dentro para fora com a tecnologia japonesa do <strong>Rosa Oriental</strong>. Com o <strong>Desafio de 90 Dias + Frete Grátis</strong>, você pode testar na sua própria rotina com total segurança e tranquilidade.</p>
-      <a href="https://rosaoriental-oficial.vercel.app/" class="cta-btn-green js-funnel-link">>> VERIFICAR KITS COM FRASCOS GRÁTIS NO SITE OFICIAL <<</a>
-      <span class="cta-sub">🔒 Acesso direto à página oficial do fabricante · Em até 12x ou PIX com envio rápido</span>
+      <p><strong>Nota Final para as Leitoras:</strong> Se você também tem frascos de cremes caros no criado-mudo ou no banheiro que nunca entregaram o que prometeram, descubra o que acontece quando você nutre sua pele de dentro para fora enquanto dorme com o <strong>Rosa Oriental</strong>. Com o <strong>Desafio de 90 Dias + Frete Grátis</strong>, o teste na sua rotina tem Risco Zero.</p>
+      <a href="https://rosaoriental-oficial.vercel.app/" class="cta-btn-green js-funnel-link">👉 VER APRESENTAÇÃO OFICIAL DO ROSA ORIENTAL →</a>
+      <span class="cta-sub">🔒 Acesso direto à página oficial do fabricante · Garantia de 90 Dias + Frete Grátis</span>
     </div>
 
   </main>
